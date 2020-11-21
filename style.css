@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  overflow-x: hidden;
+}
+
+hr {
+  border-style: none;
+  width: 10%;
+  margin: 4% auto;
+  border-top-style: dotted;
+  height: 0px;
+  border-width: 10px;
+  border-color: #11999e;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Big Shoulders Inline Text", cursive;
+  color: #034d40;
+}
+
+.top-container {
+  background-color: #e8ffff;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.about {
+  /* width: 40%;
+  text-align: center;
+  margin: 0 auto; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+.about h1 {
+  font-family: "Sacramento", cursive;
+
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  word-spacing: 3px;
+  color: #11999e;
+}
+
+.about p {
+  color: #11999e;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  font-weight: 600;
+}
+
+.land {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 11%;
+  margin: 0 auto;
+}
+
+/*
+   Cloud
+*/
+
+.cloud {
+  position: absolute;
+}
+.top-cloud {
+  top: 20%;
+  right: 10%;
+}
+
+.bottom-cloud {
+  top: 50%;
+  left: 10%;
+}
+
+.imgIcon img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+/*============Profile section ==============*/
+.middle-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.profile {
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.profile img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.frameBorder {
+  margin-top: 20px;
+  border: 7px solid transparent;
+  border-image: url("./img/borderImage.svg") 30 round;
+  padding: 30px;
+  background-color: #e8ffff;
+
+  border-radius: 10px;
+}
+.frameBorder p {
+  text-align: justify;
+  line-height: 2;
+}
+
+/*
+
+skills
+
+
+*/
+.skills {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  text-align: center;
+}
+.progress-bar {
+  background-color: #11999e;
+}
+
+.coding {
+  width: 100%;
+}
+
+/* Bottom container */
+.bottom-upper {
+  background-color: #e8ffff;
+  height: 300px;
+}
+
+.bottom-upper h2 {
+  padding: 20px;
+}
+.code {
+  text-align: center;
+  padding: 20px;
+}
+.brd {
+  width: 25%;
+  margin: 0 auto;
+  border: 5px solid transparent;
+  border-image: url("./img/borderImage.svg") 20 round;
+  padding: 0px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #213e3b;
+  position: relative;
+}
+
+.social-media {
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px;
+}
+.social-media ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-media ul li {
+  list-style-type: none;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: white;
+}
+/* // social icon */
+.social {
+  width: 50px;
+}
+
+#contact {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: -20px;
+  background-color: #11999e;
+  width: 30%;
+  border-radius: 20px;
+  outline: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border: 2px solid #213e3b;
+}
+
+@media (max-width: 768px) {
+  .land {
+    width: 100%;
+    left: 0;
+  }
+  .bottom-cloud {
+    top: 55%;
+  }
+
+  .about h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+  }
+
+  .about p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 850px) {
+  .about {
+    top: 35%;
+  }
+  .bottom-cloud {
+    top: 40%;
+  }
+}
