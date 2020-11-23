@@ -214,7 +214,8 @@ footer {
   font-family: "Roboto", sans-serif;
   position: absolute;
   top: -20px;
-  background-color: #11999e;
+  background-color: white;
+  color: black;
   width: 30%;
   border-radius: 20px;
   outline: none;
@@ -223,6 +224,18 @@ footer {
   border: 2px solid #213e3b;
 }
 
+.nav-link {
+  color: #034d40 !important;
+  font-family: monospace;
+  font-size: 16px;
+}
+.bg-dark {
+  background-color: #213e3b !important;
+}
+
+#left {
+  margin-right: 22px;
+}
 @media (max-width: 768px) {
   .land {
     width: 100%;
