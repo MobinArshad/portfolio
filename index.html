@@ -9,12 +9,8 @@
     <link rel="icon" href="./img/favicon.ico">
 
 </head>
-<body>
-  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="top-container" id="top">
-          
-      
-    
     <nav class="navbar navbar-expand-md ml-auto navbar-dark ">
        <div class="container" id="left">
         <button class="navbar-toggler bg-dark  ml-auto " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -161,5 +157,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $('body').scrollspy({ target: ".navbar" })
+</script>
 </body>
 </html>
